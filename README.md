@@ -1,15 +1,15 @@
 # Formulário com Validação de Dados
 
-Este projeto é um formulário web com validação de dados implementada em **JavaScript** para a prática de manipulação de formulários e validação no lado do cliente.
+Este projeto é um formulário web com validação de dados implementada em **JavaScript** para a prática de manipulação de formulários e validação no lado do cliente, para a disciplina de SIR.
 
 ---
 
 ## 💡 **Funcionalidades**
 - Validação de **Email** em tempo real.
 - Verificação de **código postal** no formato `DDDD-DDD`.
-- Checagem do **número do cartão** (entre 13 e 19 dígitos).
+- Confirmação do **número do cartão** (entre 13 e 19 dígitos).
 - Validação de **CVV** (3 dígitos).
-- Estilo visual indicando os campos válidos e inválidos.
+- Estilo visual que indica os campos válidos e inválidos.
 - Mensagens personalizadas de erro.
 
 ---
@@ -35,22 +35,22 @@ O projeto está disponível publicamente em: https://....
 
 ⚙️ Funcionalidade da Validação
 Validações Implementadas:
-Email:
 
+Email:
 Aceita apenas e-mails válidos no formato exemplo@dominio.com.
 Exibe uma mensagem de erro caso o formato seja inválido.
-Código Postal:
 
+Código Postal:
 Verifica o formato DDDD-DDD (Portugal).
 Exibe uma mensagem de erro se o formato não for seguido.
+
 Número do Cartão:
-
 Aceita entre 13 e 19 dígitos numéricos.
+
 CVV:
-
 Deve conter exatamente 3 dígitos.
-Validação ao Submeter:
 
+Validação ao Submeter:
 Se houver campos inválidos, o formulário exibe mensagens de erro.
 
 🖌️ Estilo
