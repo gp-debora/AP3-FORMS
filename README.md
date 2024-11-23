@@ -31,7 +31,7 @@ Este projeto é um formulário web com validação de dados implementada em **Ja
    Se estiver usando VS Code, utilize a extensão Live Server para servir o projeto localmente.
 
 🌐 Deploy com GitHub Pages
-O projeto está disponível publicamente em: https://....
+O projeto está disponível publicamente em: [https://....](https://gp-debora.github.io/AP3-FORMS/)
 
 ⚙️ Funcionalidade da Validação
 Validações Implementadas:
