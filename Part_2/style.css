@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f9;
+    overflow-y: auto;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #c8e3f7;
+}
+
+fieldset {
+    border: 2px solid #ddd; /* Ajusta a borda */
+    padding: 15px; /* Espaçamento interno */
+    margin: 15px 0; /* Espaçamento entre os fieldsets */
+    background-color: #e0f4ff; /* Suave cor de fundo */
+    position: relative; /* Garante que o legend seja posicionado corretamente */
+}
+
+
+legend {
+    background-color: #FF5733; /* Cor laranja */
+    color: white; /* Texto branco */
+    font-weight: bold; /* Texto em negrito */
+    padding: 5px; /* Aumenta o espaçamento interno para bordas mais uniformes */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    display: inline-block; /* Ajusta o tamanho do fundo ao texto */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-size: 14px; /* Tamanho do texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+legend.sub-legend {
+    background-color: #FF5733; /* Fundo laranja mais claro */
+    font-size: 14px; /* Tamanho menor */
+    margin-left: 5px; /* Remove deslocamento adicional */
+    box-shadow: none; /* Remove sombra para subtítulo */
+    padding: 3px 10px; /* Menos espaçamento */
+    text-transform: none; /* Texto não fica em maiúsculas */
+}
+
+label.text-label {
+    font-weight: bold !important;
+
+}
+
+fieldset.sub-fieldset .radio-group label {
+    font-weight: bold; /* Define o texto como negrito */
+    font-size: 14px; /* Define o tamanho do texto menor */
+    color: #333; /* Ajuste opcional para cor */
+}
+
+/* Define largura total para os inputs e selects */
+input[type="text"],
+input[type="email"],
+input[type="month"],
+select,
+textarea {
+    width: 100%; /* Ocupa toda a largura do container */
+    padding: 10px; /* Adiciona espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    font-size: 14px; /* Ajusta o tamanho do texto */
+    background-color: white; /* Fundo branco */
+}
+
+/* Estilo para o botão de envio */
+button {
+    width: 100%; /* Ocupa toda a largura */
+    padding: 12px; /* Mais espaçamento interno */
+    font-size: 16px; /* Tamanho do texto maior */
+    font-weight: bold; /* Texto em negrito */
+    color: white; /* Texto branco */
+    background-color: #4CAF50; /* Verde vibrante */
+    border: none; /* Remove bordas */
+    border-radius: 15px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: #45a049; /* Escurece o botão ao passar o mouse */
+}
+
+form.was-validated input:invalid,
+form.was-validated select:invalid,
+form.was-validated textarea:invalid {
+    border: 2px solid red;
+}
+
+form.was-validated input:valid,
+form.was-validated select:valid,
+form.was-validated textarea:valid {
+    border: 2px solid green;
+}
+
+/* Remove estilos de borda ao iniciar o formulário */
+input,
+select,
+textarea {
+    border: 1px solid #ccc;
+}

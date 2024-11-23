@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="../Part_2/style.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <!-- Informações Pessoais -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="title">Título:</label>
+            <select id="title" name="title">
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Ms.">Ms.</option>
+            </select><br>
+
+            <label for="firstName">Nome:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">Sobrenome:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-describedby="emailError">
+            <span id="emailError" class="error-message"></span>        </fieldset>
+
+        <!-- Endereço -->
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="street">Rua:</label>
+            <input type="text" id="street" name="street" required><br>
+
+            <label for="city">Cidade:</label>
+            <input type="text" id="city" name="city" required><br>
+
+            <label for="postalCode">Código Postal:</label>
+            <input type="text" id="postalCode" name="postalCode" pattern="\d{4}-\d{3}" required aria-describedby="postalCodeError">
+            <span id="postalCodeError" class="error-message"></span>
+            
+            <label for="country">País:</label>
+            <select id="country" name="country" required>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="Germany">Germany</option>
+                <option value="United States">United States</option>
+                <option value="Portugal">Portugal</option>
+
+            </select>
+        </fieldset>
+
+        <!-- Detalhes de Pagamento -->
+        <fieldset>
+            <legend class="main-legend">Detalhes de Pagamento</legend>
+
+            <!-- Subconjunto: Tipo de Cartão -->
+            <fieldset class="sub-fieldset">
+                <legend class="sub-legend">Tipo de Cartão</legend>
+                <div class="radio-group">
+                    <input type="radio" id="visa" name="cardType" value="Visa" required>
+                    <label for="visa">Visa</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="mastercard" name="cardType" value="Mastercard">
+                    <label for="mastercard">Mastercard</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="sas" name="cardType" value="SAS">
+                    <label for="sas">SAS</label>
+                </div>
+            </fieldset>
+
+            <!-- Subconjunto: Informações Adicionais -->
+            <label for="cardNumber">Número do Cartão:</label>
+            <input type="text" id="cardNumber" name="cardNumber" pattern="\d{13,19}" required aria-describedby="cardNumberError">
+            <span id="cardNumberError" class="error-message"></span>
+            
+            <label for="expiryDate">Data de Validade:</label>
+            <input type="month" id="expiryDate" name="expiryDate" required><br>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" pattern="\d{3}" required aria-describedby="cvvError">
+            <span id="cvvError" class="error-message"></span>
+            
+            <!-- Subconjunto: Termos e Condições -->
+            <fieldset class="sub-fieldset">
+                <legend class="sub-legend">Termos e Condições</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label class="text-label" for="terms">Concordo com os termos e condições.</label>
+                </div>
+            </fieldset>
+        </fieldset>
+
+
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Script para validação -->
+    <script src="../Part_3/validation.js" defer></script>
+</body>
+</html>
